@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h1>Here users list:</h1>
+<body>
+    {% if users %}
+        <ol>
+        {% for person in users %}
+            <li>User Info</li>
+                <ul>
+                    <li>First name: {{ person.first_name }}</li>
+                    <li>Last name: {{ person.last_name }}</li>
+                    <li>Email: {{ person.email }}</li>
+                </ul>
+        {% endfor %}
+        </ol>
+    {% endif %}
+
+</body>
+</html>
