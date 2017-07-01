@@ -1,0 +1,10 @@
+#.gitignore
+.idea/
+*__init__.py
+*.sqlite3
+settings.py
+migrations
+init.py
+*.pyc
+*.pyo
+
