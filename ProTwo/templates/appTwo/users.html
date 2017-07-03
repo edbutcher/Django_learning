@@ -3,21 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
-<h1>Here users list:</h1>
 <body>
-    {% if users %}
-        <ol>
-        {% for person in users %}
-            <li>User Info</li>
-                <ul>
-                    <li>First name: {{ person.first_name }}</li>
-                    <li>Last name: {{ person.last_name }}</li>
-                    <li>Email: {{ person.email }}</li>
-                </ul>
-        {% endfor %}
-        </ol>
-    {% endif %}
-
+   <div class="container">
+    <h1>Please, sing up here!</h1>
+    <form method="post">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <input type="submit" class="btn btn-primary" value="Submit">
+    </form>
+</div>
 </body>
 </html>
