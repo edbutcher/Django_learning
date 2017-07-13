@@ -1,0 +1,33 @@
+.techfont{
+  font-family: 'Patua One';
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.bigbrand{
+  font-size: 1.5em;
+}
+.centerstage{
+  margin-left: auto;
+  margin-right: auto;
+}
+.postdate{
+  text-align: center;
+}
+.posttitle{
+  font-family: 'Courgette';
+  font-size: 1.5em;
+  text-align: center;
+}
+.postcontent{
+  font-family: 'Courgette';
+  font-size: 1.5em;
+}
+.btn-comment{
+  position: absolute;
+  right: 0px;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-color: antiquewhite;
+}
