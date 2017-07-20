@@ -1,9 +1,0 @@
-#.gitignore
-.idea/
-*__init__.py
-*.sqlite3
-ProTwo/settings.py
-appTwo/migrations
-init.py
-*.pyc
-*.pyo
