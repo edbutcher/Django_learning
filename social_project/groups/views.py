@@ -5,6 +5,8 @@ from django.core.urlresolvers import reverse
 from django.views import generic
 from django.shortcuts import get_object_or_404
 from groups.models import Group, GroupMember
+from django.db import IntegrityError
+from . import models
 
 
 class CreateGroup(LoginRequiredMixin, generic.CreateView):
@@ -12,7 +14,7 @@ class CreateGroup(LoginRequiredMixin, generic.CreateView):
     model = Group
 
 
-class SinglGroup(generic.DetailView):
+class SingleGroup(generic.DetailView):
     model = Group
 
 
@@ -54,6 +56,6 @@ class LeaveGroup(LoginRequiredMixin, generic.RedirectView):
             messages.warning(self.request, 'Sorry you are in this group!')
         else:
             membership.delete()
-            messages.success()
+            messages.success(self.request, 'Success')
         return super().get(request, *args, **kwargs)
 
