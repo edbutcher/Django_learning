@@ -1,0 +1,9 @@
+#.gitignore
+.idea/
+*__init__.py
+*__pycache__
+*.sqlite3
+migrations/
+static/
+*.pyc
+*.pyo
