@@ -7,3 +7,4 @@ migrations/
 static/
 *.pyc
 *.pyo
+/easy1
